@@ -35,12 +35,10 @@ public class CarController {
         this.carRepository = carRepository ;
     }
 
-    
     @GetMapping
     public List<Car> getAllCars() {
         return carRepository.findAll() ;
     }
-    
     
     @PostMapping
     public Car addCar(@RequestBody Car car) {        
